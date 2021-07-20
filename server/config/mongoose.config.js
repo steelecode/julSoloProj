@@ -1,5 +1,6 @@
 const mongoose = require('mongoose');
-const dbName = "baskets-db";
+// const dbName = "baskets-db";
+const dbName = process.env.DB_Name;
 
 mongoose.connect("mongodb://localhost/" + dbName, {
     useNewUrlParser: true,

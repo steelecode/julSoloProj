@@ -23,6 +23,7 @@ const BasketSchema = new mongoose.Schema({
     },
     items: { 
         type: String,
+        required: [true, "Item is required for Baskets"],
         enum: [ 
             "Nettle Leaf",
             "Lavender",
